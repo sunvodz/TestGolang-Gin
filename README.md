@@ -1,10 +1,15 @@
 # TestGolang-Gin
 
 
+
 1.Create Folder TestGolang-Gin
+
 2.Create Folder src in TestGolang-Gin
+
 3.Create file main.go
+
 4.go mod init example.com/m
+
 5.write
 ==========================
 package main
