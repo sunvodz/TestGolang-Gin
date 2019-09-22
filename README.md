@@ -13,36 +13,22 @@
 5.write
 
 ==========================
-
 package main
 
 import (
-
-"fmt"
-
-"github.com/gin-gonic/gin"
-
+  "fmt"
+  "github.com/gin-gonic/gin"
 )
-
 func main() {
+  fmt.Println("Hello, Sunvo")
 
-fmt.Println("Hello, Sunvo")
-
-
-r := gin.Default() 
-
-r.GET("/", func(c *gin.Context){ 
-
-c.JSON(200, gin.H{
-
-"massage":"SunvoDz Wellcome",
-
-        })
-        
+  r := gin.Default()
+  r.GET("/", func(c *gin.Context){
+    c.JSON(200, gin.H{
+      "massage":"SunvoDz Wellcome",
     })
-    
-r.Run()
-
+  })
+  r.Run()
 }
 
 
